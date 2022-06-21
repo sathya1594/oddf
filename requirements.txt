@@ -3,4 +3,5 @@ pandas_stubs==1.2.0.58
 streamlit==1.10.0
 torch
 torchvision
+torch-scatter -f https://data.pyg.org/whl/torch-1.11.0+${CUDA}.html
 transformers==4.19.4
