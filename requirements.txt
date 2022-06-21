@@ -1,10 +1,6 @@
 pandas==1.4.2
 pandas_stubs==1.2.0.58
 streamlit==1.10.0
--f https://download.pytorch.org/whl/cpu/torch_stable.html
--f https://data.pyg.org/whl/torch-1.10.0+cu113.html
-torch==1.10.0+cu113
+torch==1.7.1+cpu
 torch-scatter
-torch-sparse
-torch-geometric
 transformers==4.19.4
