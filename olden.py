@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 import torch
-import torch_scatter
 
 def vendor(question): 
     tqa = pipeline(task="table-question-answering", 
