@@ -2,12 +2,14 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 import torch
+import torch_scatter
 
 def vendor(question): 
     tqa = pipeline(task="table-question-answering", 
                    model="google/tapas-large-finetuned-sqa")
     table = pd.read_csv("data/CP - Copy.csv",encoding='cp1252')
-    table = table.astype(str)        
+    table = table.astype(str)
+    table=table.iloc[0:3, 1:57]
     query = question
     return tqa(table=table, query=query)["answer"]    
 
