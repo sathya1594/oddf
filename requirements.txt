@@ -1,6 +1,6 @@
-pip install --upgrade pip
 pandas==1.4.3
 streamlit==1.10.0
-pip install torch torchvision torchaudio
-pip install torch-scatter -f https://data.pyg.org/whl/torch-1.11.0+cpu.html
+torch==1.11.0
+torch_scatter==2.0.9
 transformers==4.20.1
+
