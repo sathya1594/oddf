@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from transformers import pipeline
 import torch
+import torchvision
+import torchaudio
 import torch_scatter
 
 def vendor(question): 
